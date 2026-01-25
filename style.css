@@ -1,1 +1,9 @@
-@import "tailwindcss"
+/* linking google font-inter  */
+
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
