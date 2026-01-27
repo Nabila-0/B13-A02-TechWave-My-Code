@@ -17,12 +17,12 @@
 
 nav {
   width: 100%;
+  max-width: 1600px;
 }
 
 nav .nav_container {
   margin: 0 auto;
   max-width: 1200px;
-  
 }
 
 nav a {
@@ -39,9 +39,70 @@ nav button {
   display: none;
 }
 
+/* navbar styles ends here  */
+
+
 /* banner styles starts here  */
 
+#banner {
+  border-top: 1px solid #412567;
+  background: url(../assets/hero-bg.png);
+  height: 760px;
+  max-width: 1600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.img_container {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+}
+
+.microphone {
+  position: absolute;
+  top: 77px;
+  left: 117px;
+  bottom: 97px;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 252px;
+  padding: 8px 16px;
+  box-shadow: 0 3px 27px 0 #00ff8887;
+}
+
+.banner_text {
+  margin-top: 40px;
+}
+
+.banner_text p {
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.spotify {
+  padding: 12.5px 19px;
+  width: 201px;
+}
+
+.subscribe {
+  border: 1px solid #00FF88;
+  padding: 12.5px 20px;
+}
 
 /* banner styles ends here  */
 
@@ -70,4 +131,58 @@ nav button {
     max-width: 400px;
     padding: 0 20px;  
   }
+
+  .nav_container h1 {
+    font-size: 1.75rem;
+  }
+
+  nav {
+    height: 60px;
+  }
+
+  /* nav ends here */
+
+
+  /* banner starts here  */
+
+  #banner {
+    background-position: center;
+    background-size: cover;
+    height: 470px;
+  }
+
+  .banner_content {
+    margin: 40px 20px;
+    height: 386px;
+  }
+/* ............... */
+  .img_container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .microphone {
+    top: 63px;
+    left: 76px;
+    bottom: 66px;
+    width: 46px;
+    height: 70px;
+  }
+
+  .badge {
+    top: 4px;
+    left: 130px;
+  } 
+
+  .banner_text {
+    margin-top: 24px;
+  }
+
+  .banner_text h1 {
+    font-size: 2.5rem;
+  }
+
+  /* banner ends here  */
+
+
 }
