@@ -169,6 +169,87 @@ nav button {
 /* about section style ends here  */
 
 
+/* choose section style starts here  */
+
+.choose_container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.choose_container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.choose_container .all_choose_cards .choose_card {
+  background-color: rgba(53, 17, 101, 0.4);
+}
+
+.all_choose_cards .choose_card {
+  border-radius: 40px;
+}
+
+.all_choose_cards .choose_card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.all_choose_cards .choose_card p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 24px;
+  opacity: 0.6;
+}
+
+.audio {
+  grid-area: audio;
+  padding: 107px 40px;
+  max-width: 380px;
+}
+
+.friendly {
+  grid-area: friendly;
+  padding: 40px;
+}
+
+.community {
+  grid-area: community;
+  padding: 40px;
+}
+
+.interviews {
+  grid-area: interviews;
+  padding: 40px;
+  width: 790px;
+  height: 273px;
+}
+
+.resources {
+  grid-area: resources;
+  padding: 40px;
+}
+
+.choose_container .all_choose_cards {
+  margin: 0 auto;
+  display: grid;
+  gap: 30px;
+  grid-template-areas:  
+      "audio    friendly        friendly"
+      "audio    community     community"
+      "interviews  interviews resources";
+}
+
+/* choose section style ends here  */
+
+
+
 /* responsive media query starts here */
 
 /* small device */
@@ -292,4 +373,37 @@ nav button {
   }
 
   /* about section  ends here  */
+
+
+  /* choose section starts here  */
+
+
+  .choose_container {
+    padding: 40px 20px;
+  }
+
+  .choose_container h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  
+  .choose_container .all_choose_cards {
+    grid-template-areas:  
+        "audio"
+        "friendly"
+        "community"
+        "interviews"
+        "resources";
+  }
+
+  .choose_card {
+    padding: 24px;
+    max-width: 400px;
+  }
+
+  .interviews {
+    height: 311px;
+  }
+
+  /* choose section ends here  */
 }
