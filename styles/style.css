@@ -13,6 +13,16 @@
 
 /* shared styles */
 
+.badge,
+.spotify,
+.subscribe {
+  cursor: pointer;
+}
+
+/* hover effect starts here  */
+
+
+
 /* navbar styles starts here */
 
 nav {
@@ -35,8 +45,16 @@ nav button {
 }
 
 .hamburger {
-  cursor: pointer;
+  /* cursor: pointer; */
   display: none;
+}
+
+.large_device {
+  transition: all 0.5s ease-in;
+}
+
+.large_device:hover {
+  transform: scale(1.07);
 }
 
 /* navbar styles ends here  */
@@ -97,11 +115,27 @@ nav button {
 .spotify {
   padding: 12.5px 19px;
   width: 204px;
+  transition: all .5s ease-in;
+}
+
+/* hover effect  */
+
+.spotify:hover {
+  transform: scale(1.07);
 }
 
 .subscribe {
   border: 1px solid #00FF88;
   padding: 12.5px 20px;
+  transition: transform .5s ease-in;
+}
+
+/* hover effect  */
+
+.subscribe:hover {
+  transform: scale(1.07);
+  background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+  border: 1px solid transparent;
 }
 
 /* banner styles ends here  */
@@ -277,7 +311,14 @@ nav button {
 .all_featured_cards .featured_card {
   border-radius: 25px;
   max-width: 380px;
-  /* height: 440px; */
+  transition: transform .7s ease-out, background-color .7s ease-out .3s;
+}
+
+/* hover effect */
+
+.featured_card:hover {
+  transform: scale(1.1);
+  background-color:#412567;
 }
 
 .all_featured_cards .featured_card iframe {
@@ -287,6 +328,10 @@ nav button {
 
 .all_featured_cards .featured_card .featured_card_text {
   padding: 24px;
+}
+
+.all_featured_cards .featured_card .featured_card_text .small_device {
+  display: none;
 }
 
 .all_featured_cards .featured_card h3 {
@@ -341,13 +386,19 @@ nav button {
   border-radius: 40px; 
   padding-top: 40px;
   padding-bottom: 40px;
+  transition: transform .7s ease-out;
+}
+
+/* hover effect */
+
+.host_img_and_details:hover {
+  transform: scale(1.1);
 }
 
 .featured_lower .host_img_and_details .host_details h2 {
   font-weight: bold;
   font-size: 2rem;
   color: #FFFFFF;
-
 }
 
 .featured_lower .host_img_and_details .host_details p {
@@ -382,6 +433,66 @@ nav button {
 
 /* featured section style ends here  */
 
+
+
+/* footer section style starts here  */
+
+footer {
+  height: 412px;
+  background: url(../assets/footer-bg.png);
+  padding: 120px;
+  text-align: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_container {
+  margin: -27px auto;
+}
+
+.footer_social_media_container {
+  /* margin-top: 32px; */
+  margin-bottom: 32px;
+}
+
+.spotify_img,
+.apple_podcast_img {
+  width: 20px;
+  height: 20px;
+}
+
+.youtube_img {
+  width: 20px;
+  height: 19px;
+}
+
+.twitter_img {
+  width: 20.92px;
+  height: 17px;
+}
+
+.footer_social_media_container .footer_social_media_each p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.footer_social_media_each {
+  align-items: center;
+}
+
+.footer_container .footer_bottom {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FAFAFA;
+  opacity: 0.6;
+  line-height: 24px;
+}
+
+/* footer section style ends here  */
 
 
 /* responsive media query starts here */
@@ -584,8 +695,6 @@ nav button {
   .all_featured_cards .featured_card .featured_card_description {
     margin-top: 8px;
     margin-bottom: 8px;
-    /* overflow: hidden;
-    text-overflow: ellipsis; */
   }
 
   .featured_lower h1 {
@@ -618,4 +727,31 @@ nav button {
   }
 
   /* featured section ends here  */
+
+
+  /* footer section starts here */
+
+  footer {
+    height: 248px;
+    padding: 40px 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .footer_container .footer_content h1 {
+    font-size: 3rem;
+    margin-top: 15px;
+  }
+  
+  .footer_social_media_container {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* footer section ends here  */
 }
+
+
+
