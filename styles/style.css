@@ -19,9 +19,6 @@
   cursor: pointer;
 }
 
-/* hover effect starts here  */
-
-
 
 /* navbar styles starts here */
 
@@ -497,7 +494,7 @@ footer {
 
 /* responsive media query starts here */
 
-/* small device */
+/* small device starts here */
  
 @media screen and (max-width:576px) {
 
@@ -543,7 +540,7 @@ footer {
     margin: 40px 20px;
     height: 386px;
   }
-/* ............... */
+
   .img_container {
     width: 200px;
     height: 200px;
@@ -622,7 +619,6 @@ footer {
 
   /* choose section starts here  */
 
-
   .choose_container {
     padding: 40px 20px;
   }
@@ -640,12 +636,14 @@ footer {
         "interviews"
         "resources";
 
-    gap: 16px;    
+    gap: 16px;
+    justify-items: center;  
   }
 
   .all_choose_cards .choose_card {
     padding: 24px;
     max-width: 400px;
+    width: 100%;
     border-radius: 24px;
   }
 
@@ -681,7 +679,7 @@ footer {
   }
 
   .all_featured_cards .featured_card .video {
-    width: 400px;
+    width: 100%;
   }
 
   .all_featured_cards .featured_card h3 {
@@ -753,5 +751,235 @@ footer {
   /* footer section ends here  */
 }
 
+/* small device ends here  */
+
+/* medium device starts here */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+/* nav strats here  */
+
+.nav_container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* nav ends here  */
 
 
+/* banner starts here  */
+
+#banner {
+    height: 470px;
+  }
+
+  .banner_content {
+    margin: 40px 20px;
+    height: 386px;
+  }
+
+  .img_container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .microphone {
+    top: 70px;
+    left: 87px;
+    width: 46px;
+    height: 70px;
+  }
+
+  .badge {
+    top: 9px;
+    left: 160px;
+  } 
+
+  .banner_text {
+    margin-top: 24px;
+  }
+
+  .banner_text h1 {
+    font-size: 2.8rem;
+  }
+
+  /* banner ends here  */
+
+
+  /* about section starts here  */
+
+   .about_container {
+    width: 100%;
+  }
+
+  .about_text {
+    margin: 40px 20px;
+  }
+
+  .about_text h1 {
+    font-size: 2.9rem;
+    font-weight: bold;
+  }
+
+  .about_text .about_paragraph {
+    line-height: 24px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .join {
+    margin-top: 16px;
+  }
+
+  .about_container hr {
+    max-width: 650px;
+    margin: 40px auto;
+  }
+
+  .about_cards_bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 0 20px 40px;
+  }
+
+  .about_cards_bottom .about_card h1 {
+    font-size: 2.5rem;
+  }
+
+  /* about section  ends here  */
+
+
+  /* choose section starts here  */
+
+  .choose_container {
+    padding: 40px 20px;
+  }
+
+  .choose_container h1 {
+    font-size: 2.9rem;
+    margin-bottom: 16px;
+  }
+  
+  .choose_container .all_choose_cards {
+    grid-template-areas:  
+        "audio        friendly"
+        "community    resources"
+        "interviews   interviews";
+
+    gap: 16px;    
+  }
+
+  .all_choose_cards .choose_card {
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .interviews {
+    width: 770px;
+  }
+
+  /* choose section ends here  */
+
+
+  /* featured section starts here  */
+
+  .featured {
+    padding: 40px 20px;
+  }
+
+  .all_featured_cards {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .all_featured_cards .featured_card {
+    max-width: 600px;
+  }
+
+  .featured_upper h1 {
+    font-size: 2.9rem;
+    margin-bottom: 24px;
+  }
+
+  .all_featured_cards .featured_card .video {
+    width: 600px;
+  }
+
+  .all_featured_cards .featured_card h3 {
+    font-size: 1.5rem;
+  }
+
+  .all_featured_cards .featured_card .featured_card_text {
+    padding: 20px;
+  }
+
+  .all_featured_cards .featured_card .featured_card_description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .featured_lower h1 {
+    margin-top: 60px;
+    margin-bottom: 24px;
+    font-size: 2.9rem;
+  }
+
+  .featured .featured_lower .host_img_and_details {
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 24px;
+  }
+
+  .host_img_and_details .host_img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .host_img_and_details .host_details {
+    text-align: center;
+  }
+
+  .featured_lower .host_img_and_details .host_details h2 {
+    font-size: 2rem;
+  }
+
+  .host_social_media {
+    justify-content: center;
+  }
+
+  /* featured section ends here  */
+
+
+   /* footer section starts here */
+
+  footer {
+    height: 248px;
+    padding: 40px 20px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .footer_container .footer_content h1 {
+    font-size: 3rem;
+    margin-top: 15px;
+  }
+  
+  .footer_social_media_container {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* footer section ends here  */
+
+} 
+/* medium device starts here  */
